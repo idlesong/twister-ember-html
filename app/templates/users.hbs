@@ -1,0 +1,12 @@
+<h2> Hi, users </h2>
+<section id="main">
+  <ul>
+    {{#each user in model}}
+    <li>
+      {{#link-to 'user' user}}{{user.screenName}} {{/link-to}}
+    </li>
+    {{/each}}
+  </ul>
+</section>
+
+{{outlet}}

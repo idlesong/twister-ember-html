@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{#link-to 'index' class='brand'}}Home{{/link-to}}
+    </div>
+    <ul class="nav navbar-nav">
+      {{#link-to 'index'}}Topics{{/link-to}}
+      {{#link-to 'index'}}Network{{/link-to}}
+      {{#link-to 'index'}}Notify{{/link-to}}
+      {{#link-to 'index'}}Search{{/link-to}}
+      {{#link-to 'index'}}Settings{{/link-to}}
+      {{#link-to 'users'}}Users{{/link-to}}
+      {{#link-to 'posts'}}Posts{{/link-to}}
+      {{#link-to 'posts'}}followings{{/link-to}}
+    </ul>
+  </div>
+</nav>
+
+
 
 {{outlet}}

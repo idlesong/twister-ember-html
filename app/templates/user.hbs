@@ -1,0 +1,29 @@
+<h1>User detail</h1>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="well well-sm">
+        <div class="media">
+          <a class="thumbnail pull-left" href="#">
+            <img class="media-object" src="assets/defaultuser.jpg">
+          </a>
+          <div class="media-body">
+            <h2 class="media-heading">{{ screenName }}</h2>
+            <p><span class="label label-info">888 posts</span>
+              <span class="label label-info">300 following</span>
+              <span class="label label-warning">150 followers</span></p>
+            <p>
+              <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-comment"></span> Message</a>
+              <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-heart"></span> Favorite</a>
+              <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-ban-circle"></span> Unfollow</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{outlet}}
