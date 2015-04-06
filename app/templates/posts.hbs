@@ -10,24 +10,24 @@
   </ul>
 
   <div class="row">
-  <div class="col-md-8">
-    <h3> Feed timeline </h3>
+    <div class="col-md-8">
+      <h3> Feed timeline </h3>
 
-    <ul class="list-group">
-      {{#each post in model}}
-      <li class="list-group-item">
+      <ul class="list-group">
+        {{#each post in model}}
+        <li class="list-group-item">
 
-        <div class="media">
-          <div class="media-left">
-            <a href="#" >
-              <img class="media-object" src="assets/defaultuser.jpg" class="pull-left  media-object">
-            </a>
-          </div>
-          <div class="media-body">
-            <h5 class="media-heading"> user1 -Posted 1 month ago.</h5>
-              {{post.content}}
+          <div class="media">
+            <div class="media-left">
+              <a href="#" >
+                <img class="media-object" src="assets/defaultuser.jpg" class="pull-left  media-object">
+              </a>
             </div>
-          </div>
+            <div class="media-body">
+              <h5 class="media-heading"> {{post.user}} -Posted 1 month ago.</h5>
+                {{post.content}}
+              </div>
+            </div>
 
         </li>
         {{/each}}

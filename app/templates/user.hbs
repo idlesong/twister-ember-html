@@ -3,7 +3,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-4">
       <div class="well well-sm">
         <div class="media">
           <a class="thumbnail pull-left" href="#">
@@ -23,7 +23,37 @@
         </div>
       </div>
     </div>
+
+    <div class="col-md-8">
+      <h3> Feed timeline </h3>
+
+      {{log 'post count is:' posts.length}}
+
+      <ul class="list-group">
+        {{#each post in posts}}
+        {{log 'post is:' post}}
+        <li class="list-group-item">
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#" >
+                <img class="media-object" src="assets/defaultuser.jpg" class="pull-left  media-object">
+              </a>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading"> user1 -Posted 1 month ago.</h5>
+              {{post.content}}
+            </div>
+          </div>
+
+        </li>
+        {{/each}}
+      </ul>
+
+    </div>
   </div>
 </div>
+
+
 
 {{outlet}}

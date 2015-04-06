@@ -2,6 +2,8 @@
 <section id="main">
   <ul>
     {{#each user in model}}
+
+    {{log 'user is:' user}}
     <li>
       {{#link-to 'user' user}}{{user.screenName}} {{/link-to}}
     </li>
