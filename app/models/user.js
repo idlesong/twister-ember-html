@@ -5,7 +5,8 @@ var User = DS.Model.extend({
   bio:        DS.attr("text"),
   location:   DS.attr("string"),
   url:        DS.attr("string"),
-  posts:      DS.hasMany({async: true})
+  posts:      DS.hasMany({async: true}),
+  followings: DS.hasMany('following', { inverse: 'follower' })
 });
 
 User.reopenClass({

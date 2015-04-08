@@ -1,0 +1,14 @@
+<h2>Hi, friendships</h2>
+<h2>Hi, friendships</h2>
+
+<section id="main">
+
+  <ul>
+    {{#each following in model}}
+    <li>
+      {{following.follower.screenName}}followed{{following.followed.screenName}}
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{outlet}}

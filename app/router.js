@@ -14,6 +14,7 @@ Router.map(function() {
 
   this.resource('posts');
   this.resource('post', { path: '/post/:post_id' });
+  this.resource('followings');
 });
 
 export default Router;

@@ -22,6 +22,17 @@
           </div>
         </div>
       </div>
+      <div class="well well-sm">
+        {{log 'followings count is:' followings.length}}
+        <h3> Followings </h3>
+        <ul>
+          {{#each following in followings}}
+          <li>
+            followed:{{following.followed.screenName}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
     </div>
 
     <div class="col-md-8">
@@ -31,7 +42,6 @@
 
       <ul class="list-group">
         {{#each post in posts}}
-        {{log 'post is:' post}}
         <li class="list-group-item">
 
           <div class="media">
